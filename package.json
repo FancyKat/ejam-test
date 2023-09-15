@@ -1,5 +1,5 @@
 {
-  "name": "ts-nextjs-tailwind-starter",
+  "name": "ejam-full-stack-test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "tailwind": "tailwindcss -i ./src/styles/globals.css -o ./src/styles/output.css",
+    "tailwind:watch": "tailwindcss -i ./src/styles/globals.css -o ./src/styles/output.css -w",
     "lint:fix": "eslint src --fix && yarn format",
     "lint:strict": "eslint --max-warnings=0 src",
     "typecheck": "tsc --noEmit --incremental false",
@@ -29,8 +31,8 @@
   "devDependencies": {
     "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.4",
-    "@tailwindcss/forms": "^0.5.4",
     "@svgr/webpack": "^8.0.1",
+    "@tailwindcss/forms": "^0.5.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@types/react": "^18.2.15",
