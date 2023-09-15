@@ -17,10 +17,6 @@ import UnstyledLink from '@/components/links/UnstyledLink';
  */
 import Logo from '~/svg/Logo.svg';
 
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
-
 export default function HomePage() {
   return (
     <main>
@@ -41,8 +37,16 @@ export default function HomePage() {
             </ArrowLink>
           </p>
 
-          <ButtonLink className='mt-6' href='/components' variant='light'>
+          <ButtonLink className='mt-6' href='/pages/ToolPage' variant='light'>
             See all components
+          </ButtonLink>
+
+          <ButtonLink
+            className='mt-6'
+            href='/pages/ProjectPage'
+            variant='light'
+          >
+            See all /pages/ProjectPage
           </ButtonLink>
 
           <UnstyledLink
